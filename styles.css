@@ -1,21 +1,106 @@
+
+.page{
+    background-color: black;
+    height: 100vh;
+    width: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hotpink 5px so;
+    align-content: center;
+    margin: 50px;
+}
+h1, h2 {
+  margin: 0;
+}
 .post{
     background-color: white;
-    width: 50%;
-    height: 50%;
-    margin: 12px auto;
-    border: 3px solid black;
-    padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid;
+    height: auto;
+    width: 25%;
 }
-.header{
-     float: left;
-     padding: 20px;
+.first-row{
+    display: flex;
+    justify-items: left;
+    height: 80px;
+  /* justify-items: left; */
+    border: 1px solid;
+    
+    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 100%;
+    /* flex-direction: row; */
+    flex-direction: row;
+}   
+
+.first-row-left{
+    width: 50%;
+    display: flex; 
+    padding: 25px;
+    /* padding: 25px; */
+/* HERE YOU ARE JUST MISSING SOME ALIGNMENT AND PADDING */
+    align-items: center;
+    /* justify-content: space-around ; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* flex-direction: row; DON'T NEEED THIS BECAUSE IS DEFAULT*/ 
+}
+.first-row-right{
+  width: 50%;
+  justify-items: right;
+  /* justify-items: right; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  /* HERE YOU NEED ONLY TO MOVE YOUR ICON ON THE RIGHT AND ADD SOME PADDING
+   */
+}
+.headers{
+    font-size: 10px;
+    margin-left: 10px;
+}
+.second-row {
+    width: 100%;
+    height: 50%;
+    flex-grow: 100;
+    
 }
 
-.firstWords{
-    padding: 10px;
+img{
+    width: 100%;
+    height: 300px; 
+    
+     
+        
 }
-.secondtWords{
-    padding: 10px;
-    word-spacing: ;
+.fa-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
+.threeIcons{
+   display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    padding-right: 5px ;
+    
+    
+} 
+.content{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.likes{
+    margin-left: 10px;
+}
+/* REMEMBER ALWAYS TO APPLY DISPLAY FLEX TO THE PARENT
+   THE PARENT HERE IS fa-row
+AND THE CHILDREN ARE  THE DIV THREEICONS AND THE SINGLE ICON */
+ 
